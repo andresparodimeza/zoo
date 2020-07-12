@@ -1,0 +1,134 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 368648 bytes for Chunk::new
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (allocation.cpp:390), pid=5312, tid=0x00001044
+#
+# JRE version:  (8.0_181-b13) (build )
+# Java VM: Java HotSpot(TM) Client VM (25.181-b13 mixed mode windows-x86 )
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0118c000):  JavaThread "Unknown thread" [_thread_in_vm, id=4164, stack(0x018b0000,0x01900000)]
+
+Stack: [0x018b0000,0x01900000],  sp=0x018ff728,  free space=317k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x1accfb]
+V  [jvm.dll+0x1a53c8]
+V  [jvm.dll+0x8e051]
+V  [jvm.dll+0x8e5d7]
+V  [jvm.dll+0x4c62a]
+V  [jvm.dll+0xaae20]
+V  [jvm.dll+0x15a974]
+V  [jvm.dll+0x17f45b]
+V  [jvm.dll+0xe7f01]
+C  [javaw.exe+0x1598]
+C  [javaw.exe+0x210f]
+C  [javaw.exe+0xb05f]
+C  [javaw.exe+0xb0e9]
+C  [kernel32.dll+0x53c45]
+C  [ntdll.dll+0x637f5]
+C  [ntdll.dll+0x637c8]
+C  0x00000000
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0118c000 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=4164, stack(0x018b0000,0x01900000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x011f0000 - 0x01223000 	C:\nada\bin\javaw.exe
+0x76da0000 - 0x76edc000 	C:\Windows\SYSTEM32\ntdll.dll
+0x75ae0000 - 0x75bb4000 	C:\Windows\system32\kernel32.dll
+0x750c0000 - 0x7510a000 	C:\Windows\system32\KERNELBASE.dll
+0x752b0000 - 0x75350000 	C:\Windows\system32\ADVAPI32.dll
+0x756f0000 - 0x7579c000 	C:\Windows\system32\msvcrt.dll
+0x76b00000 - 0x76b19000 	C:\Windows\SYSTEM32\sechost.dll
+0x76f20000 - 0x76fc1000 	C:\Windows\system32\RPCRT4.dll
+0x758b0000 - 0x75979000 	C:\Windows\system32\USER32.dll
+0x76bf0000 - 0x76c3e000 	C:\Windows\system32\GDI32.dll
+0x751f0000 - 0x751fa000 	C:\Windows\system32\LPK.dll
+0x75210000 - 0x752ad000 	C:\Windows\system32\USP10.dll
+0x73c60000 - 0x73dfe000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2\COMCTL32.dll
+0x76aa0000 - 0x76af7000 	C:\Windows\system32\SHLWAPI.dll
+0x75350000 - 0x7536f000 	C:\Windows\system32\IMM32.DLL
+0x76b20000 - 0x76bec000 	C:\Windows\system32\MSCTF.dll
+0x502a0000 - 0x5035f000 	C:\nada\bin\msvcr100.dll
+0x655f0000 - 0x659c3000 	C:\nada\bin\client\jvm.dll
+0x713b0000 - 0x713b7000 	C:\Windows\system32\WSOCK32.dll
+0x75370000 - 0x753a5000 	C:\Windows\system32\WS2_32.dll
+0x75200000 - 0x75206000 	C:\Windows\system32\NSI.dll
+0x6e8c0000 - 0x6e8f2000 	C:\Windows\system32\WINMM.dll
+0x743f0000 - 0x743f9000 	C:\Windows\system32\VERSION.dll
+0x76ee0000 - 0x76ee5000 	C:\Windows\system32\PSAPI.DLL
+0x73c50000 - 0x73c5c000 	C:\nada\bin\verify.dll
+0x6d950000 - 0x6d972000 	C:\nada\bin\java.dll
+0x72d50000 - 0x72d64000 	C:\nada\bin\zip.dll
+0x70f60000 - 0x7104b000 	C:\Windows\system32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=Cp1252 
+java_command: com.zoo.java.Zoologico
+java_class_path (initial): C:\Users\Andres Parodi\workspace\Zoologico\bin;C:\Users\Andres Parodi\Downloads\postgresql-42.2.11.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:/nada/bin/client;C:/nada/bin;C:/nada/lib/i386;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Users\Andres Parodi\Downloads\eclipse-java-kepler-SR1-win32 (1)\eclipse;
+USERNAME=Andres Parodi
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 15 Stepping 13, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 Build 7601 (6.1.7601.17514)
+
+CPU:total 2 (initial active 2) (2 cores per cpu, 1 threads per core) family 6 model 15 stepping 13, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, tsc
+
+Memory: 4k page, physical 2087160k(358868k free), swap 4174320k(5740k free)
+
+vm_info: Java HotSpot(TM) Client VM (25.181-b13) for windows-x86 JRE (1.8.0_181-b13), built on Jul  7 2018 03:18:20 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Sun Jun 21 17:57:54 2020
+elapsed time: 1 seconds (0d 0h 0m 1s)
+
